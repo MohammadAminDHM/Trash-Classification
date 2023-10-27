@@ -2,6 +2,8 @@
 
 Welcome to the Trash Classification Project! This project aims to classify different types of trash into six distinct categories using TensorFlow. It's a step towards understanding and solving the problem of waste management through machine learning.
 
+link of dataset : [link](https://www.kaggle.com/datasets/fatemehboloori/trash-type-detection)
+
 ## Classes
 The project can classify trash into the following categories:
 - Metal
