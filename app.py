@@ -4,6 +4,7 @@ from tkinter import filedialog
 from PIL import Image, ImageTk
 import numpy as np
 import tensorflow as tf
+from tkinter import font
 
 # Load the model
 model = tf.keras.models.load_model('model\\trash_classification.h5')
@@ -41,7 +42,8 @@ button.pack(pady=20)
 
 result = tk.StringVar()
 result.set("Result: ")
-result_label = tk.Label(frame, textvariable=result)
+custom_font = font.Font(family="Helvetica", size=20)
+result_label = tk.Label(frame, textvariable=result, font=custom_font)
 result_label.pack(pady=20)
 
 root.mainloop()
